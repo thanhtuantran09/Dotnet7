@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ThucTap\\WebApplication2\\WebApplication2.csproj": {}
+    "D:\\C#\\Dotnet7\\WebApplication2\\WebApplication2.csproj": {}
   },
   "projects": {
-    "D:\\ThucTap\\WebApplication2\\WebApplication2.csproj": {
+    "D:\\C#\\Dotnet7\\WebApplication2\\WebApplication2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ThucTap\\WebApplication2\\WebApplication2.csproj",
+        "projectUniqueName": "D:\\C#\\Dotnet7\\WebApplication2\\WebApplication2.csproj",
         "projectName": "WebApplication2",
-        "projectPath": "D:\\ThucTap\\WebApplication2\\WebApplication2.csproj",
+        "projectPath": "D:\\C#\\Dotnet7\\WebApplication2\\WebApplication2.csproj",
         "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\ThucTap\\WebApplication2\\obj\\",
+        "outputPath": "D:\\C#\\Dotnet7\\WebApplication2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -7,9 +7,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddJsonFile("Config/dbsettings.json");
 
-// Add services to the container.
 builder.Services.Configure<DatabaseConfig>(builder.Configuration.GetSection("ConnectionStrings"));
-builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(
+        $"Host={builder.Configuration.GetValue<string>("ConnectionStrings:DefaultConnection:psql_host")}; " +
+        $"Port={builder.Configuration.GetValue<string>("ConnectionStrings:DefaultConnection:psql_port")}; " +
+        $"Database={builder.Configuration.GetValue<string>("ConnectionStrings:DefaultConnection:psql_database")}; " +
+        $"Username={builder.Configuration.GetValue<string>("ConnectionStrings:DefaultConnection:psql_username")}; " +
+        $"Password={builder.Configuration.GetValue<string>("ConnectionStrings:DefaultConnection:psql_password")}"
+    )
+);
 
 builder.Services.AddScoped<ProductProvider>();
 builder.Services.AddScoped<CategoryProvider>();

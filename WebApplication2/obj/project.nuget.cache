@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AkBk8+aYKBLZTh/TNrLxwkLBglwy16qXt06gSNHmiV+4baz8RMGjWvdPJoTlfq/qP13FhDasuPgf+C4JEB7RcA==",
+  "dgSpecHash": "XOqbgjZWYj6w4LPamvvqHnpPfK3w7PgmjEPuKBjqId3/vYXpPWTlrE/G2OJOS3FfobqYBb4dIg2VYH7reM6jMw==",
   "success": true,
-  "projectFilePath": "D:\\ThucTap\\WebApplication2\\WebApplication2.csproj",
+  "projectFilePath": "D:\\C#\\Dotnet7\\WebApplication2\\WebApplication2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thanh\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\thanh\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

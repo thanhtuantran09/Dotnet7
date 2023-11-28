@@ -1,5 +1,11 @@
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Host=localhost;Port=5432;Database=WebApi;Username=postgres;Password=12345"
+    "DefaultConnection": {
+      "psql_host": "localhost",
+      "psql_port": "5432",
+      "psql_database": "WebApi",
+      "psql_username": "postgres",
+      "psql_password": "12345"
+    }
   }
 }
