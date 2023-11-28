@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using WebApplication2.Config;
 using WebApplication2.Data;
 using WebApplication2.Models;
 

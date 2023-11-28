@@ -5,12 +5,21 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration.AddJsonFile("Config/dbsettings.json");
+
 // Add services to the container.
 builder.Services.Configure<DatabaseConfig>(builder.Configuration.GetSection("ConnectionStrings"));
 builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddScoped<ProductProvider>();
 builder.Services.AddScoped<CategoryProvider>();
-builder.Services.AddControllers();
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+    });
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
